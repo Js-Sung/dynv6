@@ -1,7 +1,7 @@
 # 更新dynv6域名IP地址和record
 
 - dynv6官方提供了HTTP API来更新IPv4/IPv6，但是不包括record。本仓库的脚本实现了通过HTTP请求来更新record。
-- 由于我只使用IPV6地址，脚本中只更新ipv6地址，然后判断ipv6地址更新结果，如果是"addresses updated"，表示地址发生改变并更新成功，则同时进行更新AAAA记录，否则退出。
+- 由于我只使用IPV6地址，脚本中只更新ipv6地址，如果执行无误则同时进行更新或新增AAAA记录，否则退出。
 
 
 ## 变量说明
